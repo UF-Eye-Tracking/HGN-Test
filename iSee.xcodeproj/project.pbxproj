@@ -36,7 +36,6 @@
 		4C45509F1895473E00BC6A2C /* AcuityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4550961895473E00BC6A2C /* AcuityView.m */; };
 		4C4550A01895473E00BC6A2C /* DiagnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4550981895473E00BC6A2C /* DiagnosisViewController.m */; };
 		4C4550A11895473E00BC6A2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C45509A1895473E00BC6A2C /* ViewController.m */; };
-		4C4550A21895473E00BC6A2C /* Restricted.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C45509B1895473E00BC6A2C /* Restricted.xcassets */; };
 		4C4550AE189547F500BC6A2C /* VideoAcuityChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C4550AD189547F500BC6A2C /* VideoAcuityChecker.mm */; };
 		4C689D7018C507300023ABA1 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C689D6F18C507300023ABA1 /* iTunesArtwork@2x.png */; };
 		4CA3E515193CE3CD00368440 /* AVFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3E514193CE3CD00368440 /* AVFish.m */; };
@@ -91,7 +90,6 @@
 		4C4550981895473E00BC6A2C /* DiagnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiagnosisViewController.m; sourceTree = "<group>"; };
 		4C4550991895473E00BC6A2C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4C45509A1895473E00BC6A2C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4C45509B1895473E00BC6A2C /* Restricted.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Restricted.xcassets; sourceTree = "<group>"; };
 		4C4550AC189547F500BC6A2C /* VideoAcuityChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAcuityChecker.h; sourceTree = "<group>"; };
 		4C4550AD189547F500BC6A2C /* VideoAcuityChecker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoAcuityChecker.mm; sourceTree = "<group>"; };
 		4C4550AF1895508600BC6A2C /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 				4C69E1FF18969AD7008763B3 /* UI Subclasses */,
 				4C69E1FE18969AC1008763B3 /* View Controllers */,
 				449A5FF616F497F200249104 /* Supporting Files */,
-				4C45509B1895473E00BC6A2C /* Restricted.xcassets */,
 				4C45508F1895473E00BC6A2C /* Images.xcassets */,
 				4CD179CC18952E1B00A8A660 /* Storyboard.storyboard */,
 			);
@@ -326,7 +323,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4550A21895473E00BC6A2C /* Restricted.xcassets in Resources */,
 				449A5FFA16F497F200249104 /* InfoPlist.strings in Resources */,
 				449A600216F497F200249104 /* Default.png in Resources */,
 				4C45509C1895473E00BC6A2C /* Images.xcassets in Resources */,
@@ -404,7 +400,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -428,7 +424,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -450,10 +446,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iSee/iSee-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iSee/iSee-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ufl.HGN-Test";
 				PRODUCT_NAME = iSee;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -473,11 +470,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iSee/iSee-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iSee/iSee-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ufl.HGN-Test";
 				PRODUCT_NAME = iSee;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
