@@ -8,11 +8,6 @@
 
 #import "AcuityModel.h"
 
-#import "AVHouse.h"
-#import "AVBoat.h"
-#import "AVFish.h"
-#import "AVTrain.h"
-
 #define MAX_TRIALS 3
 
 @interface AcuityModel ()
@@ -39,9 +34,6 @@
         // We cycle through these images. Each image is shown three times,
         // in a random position.
         self.optotypeIndex = -1;  // we alway increment in the first time through
-
-        // Restricted image set
-        self.optotypes = @[[AVHouse alloc], [AVBoat alloc], [AVTrain alloc], [AVFish alloc]];
 
         // Each image has an associated diagnosis
         self.diagnoses = @[@"6/60", @"6/36", @"6/18", @"6/12", @"6/9"];
