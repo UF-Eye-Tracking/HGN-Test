@@ -1,29 +1,13 @@
-iSee - NHS Hack Day Cardiff 2014
+HGN Test - UF iOS Eye Tracking Application
 ==========================
 
-This repository contains source code for our implementation of eye tracking on a tablet. This was the winning entry for NHSHackday (Jan 2014) in Cardiff that spanned for two days. This application is aimed at kids for use in hospitals, to aid in carrying out acuity measurements. You can read more about the event [here](http://blogs.cardiff.ac.uk/development/2014/01/26/nhs-hack-day/)
+This repository contains source code for our implementation of eye tracking application for iOS software. This was created as a research project to perform the horizontal gaze nystagmus test.  This test can be used in a variety of situations such as, but not limited to, performing preliminary concussion tests and well as roadside sobriety tests.
 
-*Note*: There is a vital part of this application missing, which are the Cardiff Cards assets. We could not include them for copyright reasons, so the build will fail without minorly changing the asset imports.
-
-![Photo of the eye tracking](http://farm3.staticflickr.com/2865/12158869143_fe4c2f8c5b_h.jpg)
-
-Photo courtesy of Paul Clarke, more from the event [here](http://www.flickr.com/photos/paul_clarke/sets/72157640139264593/)
-
-The iOS app uses a few open source componenets:
-- [OpenCV](https://github.com/Itseez/opencv) For face and feature detection.
-- [eyeLike](https://github.com/trishume/eyeLike) C++ project which we ported to iOS for accurate eye tracking, based on this [paper](http://www.inb.uni-luebeck.de/publikationen/pdfs/TiBa11b.pdf)
 
 TODO
 ==========================
-Even though the hack day has finished, software development never does! We are keen to improve this application.
+This is an ongoing project, and there are a variety of issues that need to be addressed:
 
-- [Investigate adding eye corners tracking](https://github.com/DanielKoehler/iSee/issues/3)
-- [Landscape Mode Tracking](https://github.com/DanielKoehler/iSee/issues/2)
-
-This is an ongoing project for us, we have been kindly given a new iPad to continue improving the application.
-
-Contributors
+Forked from
 ==========================
- * [Tharshan Muthulingam](http://github.com/viperfx)
- * [Daniel Koehler](http://github.com/DanielKoehler)
- * [Mike Rhodes](http://github.com/mikerhodes)
+ * [iSee](https://github.com/DanielKoehler/iSee)
