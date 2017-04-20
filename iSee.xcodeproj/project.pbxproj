@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CAAA3BC193C880300840153 /* AVBoat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAAA3B5193C880300840153 /* AVBoat.m */; };
-		3CAAA3BD193C880300840153 /* AVHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAAA3B7193C880300840153 /* AVHouse.m */; };
 		3CAAA3BE193C880300840153 /* Optotype.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAAA3B9193C880300840153 /* Optotype.m */; };
 		3CAAA3BF193C880300840153 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAAA3BB193C880300840153 /* UIColor+Extensions.m */; };
 		3CF2681B18F7195E00B0AF11 /* PupilTracking.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CF2681A18F7195E00B0AF11 /* PupilTracking.mm */; };
@@ -38,18 +36,13 @@
 		4C4550A11895473E00BC6A2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C45509A1895473E00BC6A2C /* ViewController.m */; };
 		4C4550AE189547F500BC6A2C /* VideoAcuityChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C4550AD189547F500BC6A2C /* VideoAcuityChecker.mm */; };
 		4C689D7018C507300023ABA1 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C689D6F18C507300023ABA1 /* iTunesArtwork@2x.png */; };
-		4CA3E515193CE3CD00368440 /* AVFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3E514193CE3CD00368440 /* AVFish.m */; };
-		4CA3E51E193CEB1800368440 /* AVTrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3E51D193CEB1800368440 /* AVTrain.m */; };
 		4CCBCF5318C202DD000D6B6F /* DebugViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CCBCF5218C202DD000D6B6F /* DebugViewController.mm */; };
-		4CCBCF5618C22916000D6B6F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCBCF5518C22916000D6B6F /* SettingsViewController.m */; };
 		4CD179CD18952E1B00A8A660 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD179CC18952E1B00A8A660 /* Storyboard.storyboard */; };
+		D0C5D98B1E9B07BF00467AD2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5D98A1E9B07BF00467AD2 /* TestViewController.swift */; };
+		D0C5D98D1E9C749C00467AD2 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5D98C1E9C749C00467AD2 /* FaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3CAAA3B4193C880300840153 /* AVBoat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVBoat.h; sourceTree = "<group>"; };
-		3CAAA3B5193C880300840153 /* AVBoat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVBoat.m; sourceTree = "<group>"; };
-		3CAAA3B6193C880300840153 /* AVHouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVHouse.h; sourceTree = "<group>"; };
-		3CAAA3B7193C880300840153 /* AVHouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVHouse.m; sourceTree = "<group>"; };
 		3CAAA3B8193C880300840153 /* Optotype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Optotype.h; sourceTree = "<group>"; };
 		3CAAA3B9193C880300840153 /* Optotype.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Optotype.m; sourceTree = "<group>"; };
 		3CAAA3BA193C880300840153 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
@@ -94,14 +87,8 @@
 		4C4550AD189547F500BC6A2C /* VideoAcuityChecker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoAcuityChecker.mm; sourceTree = "<group>"; };
 		4C4550AF1895508600BC6A2C /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		4C689D6F18C507300023ABA1 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		4CA3E513193CE3CD00368440 /* AVFish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFish.h; sourceTree = "<group>"; };
-		4CA3E514193CE3CD00368440 /* AVFish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFish.m; sourceTree = "<group>"; };
-		4CA3E51C193CEB1800368440 /* AVTrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVTrain.h; sourceTree = "<group>"; };
-		4CA3E51D193CEB1800368440 /* AVTrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVTrain.m; sourceTree = "<group>"; };
 		4CCBCF5118C202DD000D6B6F /* DebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugViewController.h; sourceTree = "<group>"; };
 		4CCBCF5218C202DD000D6B6F /* DebugViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DebugViewController.mm; sourceTree = "<group>"; };
-		4CCBCF5418C22916000D6B6F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		4CCBCF5518C22916000D6B6F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		4CD179C11895235100A8A660 /* findEyeCentre.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findEyeCentre.cpp; sourceTree = "<group>"; };
 		4CD179C21895235100A8A660 /* findEyeCentre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findEyeCentre.h; sourceTree = "<group>"; };
 		4CD179C31895235100A8A660 /* findEyeCorner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findEyeCorner.cpp; sourceTree = "<group>"; };
@@ -109,6 +96,9 @@
 		4CD179C51895235100A8A660 /* helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helpers.cpp; sourceTree = "<group>"; };
 		4CD179C61895235100A8A660 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
 		4CD179CC18952E1B00A8A660 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		D0C5D9891E9B07BF00467AD2 /* iSee-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSee-Bridging-Header.h"; sourceTree = "<group>"; };
+		D0C5D98A1E9B07BF00467AD2 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		D0C5D98C1E9C749C00467AD2 /* FaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,21 +123,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3CAAA3C0193C884200840153 /* Optotypes */ = {
-			isa = PBXGroup;
-			children = (
-				3CAAA3B4193C880300840153 /* AVBoat.h */,
-				3CAAA3B5193C880300840153 /* AVBoat.m */,
-				3CAAA3B6193C880300840153 /* AVHouse.h */,
-				3CAAA3B7193C880300840153 /* AVHouse.m */,
-				4CA3E513193CE3CD00368440 /* AVFish.h */,
-				4CA3E514193CE3CD00368440 /* AVFish.m */,
-				4CA3E51C193CEB1800368440 /* AVTrain.h */,
-				4CA3E51D193CEB1800368440 /* AVTrain.m */,
-			);
-			name = Optotypes;
-			sourceTree = "<group>";
-		};
 		449A5FE316F497F200249104 = {
 			isa = PBXGroup;
 			children = (
@@ -188,7 +163,6 @@
 		449A5FF516F497F200249104 /* iSee */ = {
 			isa = PBXGroup;
 			children = (
-				3CAAA3C0193C884200840153 /* Optotypes */,
 				4C69E1FF18969AD7008763B3 /* UI Subclasses */,
 				4C69E1FE18969AC1008763B3 /* View Controllers */,
 				449A5FF616F497F200249104 /* Supporting Files */,
@@ -250,8 +224,9 @@
 				4C45509A1895473E00BC6A2C /* ViewController.m */,
 				4CCBCF5118C202DD000D6B6F /* DebugViewController.h */,
 				4CCBCF5218C202DD000D6B6F /* DebugViewController.mm */,
-				4CCBCF5418C22916000D6B6F /* SettingsViewController.h */,
-				4CCBCF5518C22916000D6B6F /* SettingsViewController.m */,
+				D0C5D98A1E9B07BF00467AD2 /* TestViewController.swift */,
+				D0C5D9891E9B07BF00467AD2 /* iSee-Bridging-Header.h */,
+				D0C5D98C1E9C749C00467AD2 /* FaceViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -298,6 +273,7 @@
 				TargetAttributes = {
 					449A5FEB16F497F200249104 = {
 						DevelopmentTeam = 25NK4A4VUP;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -342,14 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4550A11895473E00BC6A2C /* ViewController.m in Sources */,
+				D0C5D98D1E9C749C00467AD2 /* FaceViewController.swift in Sources */,
 				449A5FFC16F497F200249104 /* main.mm in Sources */,
-				4CCBCF5618C22916000D6B6F /* SettingsViewController.m in Sources */,
-				3CAAA3BD193C880300840153 /* AVHouse.m in Sources */,
-				4CA3E515193CE3CD00368440 /* AVFish.m in Sources */,
-				4CA3E51E193CEB1800368440 /* AVTrain.m in Sources */,
 				4C45509E1895473E00BC6A2C /* AcuityModel.m in Sources */,
 				3CAAA3BE193C880300840153 /* Optotype.m in Sources */,
-				3CAAA3BC193C880300840153 /* AVBoat.m in Sources */,
 				4CCBCF5318C202DD000D6B6F /* DebugViewController.mm in Sources */,
 				4C4550AE189547F500BC6A2C /* VideoAcuityChecker.mm in Sources */,
 				4C45509D1895473E00BC6A2C /* AcuityChecker.m in Sources */,
@@ -357,6 +329,7 @@
 				449A600016F497F200249104 /* AppDelegate.mm in Sources */,
 				4C4550A01895473E00BC6A2C /* DiagnosisViewController.m in Sources */,
 				3CF2681B18F7195E00B0AF11 /* PupilTracking.mm in Sources */,
+				D0C5D98B1E9B07BF00467AD2 /* TestViewController.swift in Sources */,
 				3CAAA3BF193C880300840153 /* UIColor+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 25NK4A4VUP;
@@ -447,9 +421,13 @@
 				GCC_PREFIX_HEADER = "iSee/iSee-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iSee/iSee-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.ufl.HGN-Test";
 				PRODUCT_NAME = iSee;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iSee/iSee-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -459,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 25NK4A4VUP;
@@ -471,10 +450,13 @@
 				GCC_PREFIX_HEADER = "iSee/iSee-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iSee/iSee-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.ufl.HGN-Test";
 				PRODUCT_NAME = iSee;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iSee/iSee-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
