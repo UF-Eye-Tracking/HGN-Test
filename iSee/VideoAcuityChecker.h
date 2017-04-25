@@ -39,4 +39,9 @@ typedef NS_ENUM(NSInteger, EyePosition) {
 
 -(void) stop;
 
+-(void) getRightEye;
+
+-(void) getLeftEye;
+
+
 @end

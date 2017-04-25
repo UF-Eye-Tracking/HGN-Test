@@ -22,7 +22,7 @@ class TestViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.videoAcc = VideoAcuityChecker()
         videoAcc.startDebug(with: imageView)
-        
+        locationLabel.text = "Right Eye \(self.videoAcc.getRightEye())"
     }
 
     override func didReceiveMemoryWarning() {

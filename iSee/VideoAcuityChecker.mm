@@ -11,12 +11,17 @@
 //#include "findEyeCentre.h"
 //#include "findEyeCorner.h"
 #import "PupilTracking.h"
+
 using namespace cv;
+
 
 @interface VideoAcuityChecker ()
 
 @property (nonatomic) AcuityCheckerPosition trialPosition;
 @property (nonatomic, retain) PupilTracking* pupilTracking;
+@property Point_<int> leftPupil;
+@property Point_<int> rightPupil;
+
 @end
 
 @implementation VideoAcuityChecker
@@ -74,6 +79,14 @@ const int HaarOptions = CV_HAAR_FIND_BIGGEST_OBJECT | CV_HAAR_DO_ROUGH_SEARCH;
     self.vcVideoCamera.delegate = nil;
     self.vcVideoCamera = nil;
     [self.vcVideoCamera stop];
+}
+
+-(void) getRightEye {
+    printf("Right (%d, %d)\n", _rightPupil.x, _rightPupil.y);
+}
+
+-(void) getLeftEye {
+    printf("Right (%d, %d)\n", _rightPupil.x, _rightPupil.y);
 }
 
 #pragma mark MRAcuityCheckerDelegate methods
@@ -153,25 +166,25 @@ const int HaarOptions = CV_HAAR_FIND_BIGGEST_OBJECT | CV_HAAR_DO_ROUGH_SEARCH;
     
     //-- Find Eye Centers
   
-    cv::Point leftPupil = [self.pupilTracking findEyeCenter:faceROI withEye:leftEyeRegion withOutput:outputFrame];
-    cv::Point rightPupil = [self.pupilTracking findEyeCenter:faceROI withEye:rightEyeRegion withOutput:outputFrame];
+    _leftPupil = [self.pupilTracking findEyeCenter:faceROI withEye:leftEyeRegion withOutput:outputFrame];
+    _rightPupil = [self.pupilTracking findEyeCenter:faceROI withEye:rightEyeRegion withOutput:outputFrame];
     // get corner regions
     cv::Rect leftRightCornerRegion(leftEyeRegion);
-    leftRightCornerRegion.width -= leftPupil.x;
-    leftRightCornerRegion.x += leftPupil.x;
+    leftRightCornerRegion.width -= _leftPupil.x;
+    leftRightCornerRegion.x += _leftPupil.x;
     leftRightCornerRegion.height /= 2;
     leftRightCornerRegion.y += leftRightCornerRegion.height / 2;
     cv::Rect leftLeftCornerRegion(leftEyeRegion);
-    leftLeftCornerRegion.width = leftPupil.x;
+    leftLeftCornerRegion.width = _leftPupil.x;
     leftLeftCornerRegion.height /= 2;
     leftLeftCornerRegion.y += leftLeftCornerRegion.height / 2;
     cv::Rect rightLeftCornerRegion(rightEyeRegion);
-    rightLeftCornerRegion.width = rightPupil.x;
+    rightLeftCornerRegion.width = _rightPupil.x;
     rightLeftCornerRegion.height /= 2;
     rightLeftCornerRegion.y += rightLeftCornerRegion.height / 2;
     cv::Rect rightRightCornerRegion(rightEyeRegion);
-    rightRightCornerRegion.width -= rightPupil.x;
-    rightRightCornerRegion.x += rightPupil.x;
+    rightRightCornerRegion.width -= _rightPupil.x;
+    rightRightCornerRegion.x += _rightPupil.x;
     rightRightCornerRegion.height /= 2;
     rightRightCornerRegion.y += rightRightCornerRegion.height / 2;
     rectangle(faceROI,leftRightCornerRegion,200);
@@ -179,14 +192,14 @@ const int HaarOptions = CV_HAAR_FIND_BIGGEST_OBJECT | CV_HAAR_DO_ROUGH_SEARCH;
     rectangle(faceROI,rightLeftCornerRegion,200);
     rectangle(faceROI,rightRightCornerRegion,200);
     // change eye centers to face coordinates
-    rightPupil.x += rightEyeRegion.x;
-    rightPupil.y += rightEyeRegion.y;
-    leftPupil.x += leftEyeRegion.x;
-    leftPupil.y += leftEyeRegion.y;
+    _rightPupil.x += rightEyeRegion.x;
+    _rightPupil.y += rightEyeRegion.y;
+    _leftPupil.x += leftEyeRegion.x;
+    _leftPupil.y += leftEyeRegion.y;
     // draw eye centers
-    circle(faceROI, rightPupil, 3, 1234);
-    circle(faceROI, leftPupil, 3, 1234);
-    printf("Right (%d, %d), Left (%d, %d)\n", rightPupil.x, rightPupil.y, leftPupil.x, leftPupil.y);
+    circle(faceROI, _rightPupil, 3, 1234);
+    circle(faceROI, _leftPupil, 3, 1234);
+    printf("Right (%d, %d), Left (%d, %d)\n", _rightPupil.x, _rightPupil.y, _leftPupil.x, _leftPupil.y);
     //-- Find Eye Corners
     if (self.pupilTracking.EnableEyeCorner) {
 //        cv::Point2f leftRightCorner = findEyeCorner(faceROI(leftRightCornerRegion), true, false);
@@ -212,12 +225,12 @@ const int HaarOptions = CV_HAAR_FIND_BIGGEST_OBJECT | CV_HAAR_DO_ROUGH_SEARCH;
     framesAtPosition++;
     
     if((int)framesAtPosition > 15) {
-        if ((rightPupil.y + leftPupil.y) / 2 > 40){
+        if ((_rightPupil.y + _leftPupil.y) / 2 > 40){
             eyesAreTop = TRUE;
             eyePosition = EyePositionTop;
             NSLog(@"Greater");
             //stop the camera and move to next slide
-        } else if ((rightPupil.y + leftPupil.y) / 2 < 35){
+        } else if ((_rightPupil.y + _leftPupil.y) / 2 < 35){
             NSLog(@"Less");
             eyesAreTop = FALSE;
             eyePosition = EyePositionBottom;
