@@ -39,7 +39,6 @@
 		4CCBCF5318C202DD000D6B6F /* DebugViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CCBCF5218C202DD000D6B6F /* DebugViewController.mm */; };
 		4CD179CD18952E1B00A8A660 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD179CC18952E1B00A8A660 /* Storyboard.storyboard */; };
 		D0C5D98B1E9B07BF00467AD2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5D98A1E9B07BF00467AD2 /* TestViewController.swift */; };
-		D0C5D98D1E9C749C00467AD2 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5D98C1E9C749C00467AD2 /* FaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,7 +97,6 @@
 		4CD179CC18952E1B00A8A660 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		D0C5D9891E9B07BF00467AD2 /* iSee-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSee-Bridging-Header.h"; sourceTree = "<group>"; };
 		D0C5D98A1E9B07BF00467AD2 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		D0C5D98C1E9C749C00467AD2 /* FaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,7 +224,6 @@
 				4CCBCF5218C202DD000D6B6F /* DebugViewController.mm */,
 				D0C5D98A1E9B07BF00467AD2 /* TestViewController.swift */,
 				D0C5D9891E9B07BF00467AD2 /* iSee-Bridging-Header.h */,
-				D0C5D98C1E9C749C00467AD2 /* FaceViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -318,7 +315,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4550A11895473E00BC6A2C /* ViewController.m in Sources */,
-				D0C5D98D1E9C749C00467AD2 /* FaceViewController.swift in Sources */,
 				449A5FFC16F497F200249104 /* main.mm in Sources */,
 				4C45509E1895473E00BC6A2C /* AcuityModel.m in Sources */,
 				3CAAA3BE193C880300840153 /* Optotype.m in Sources */,

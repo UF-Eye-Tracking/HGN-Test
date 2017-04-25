@@ -44,7 +44,7 @@
 #define __OPENCV_BACKGROUND_SEGM_HPP__
 
 #include "opencv2/core/core.hpp"
-#include <list>
+//#include <list>
 namespace cv
 {
 
